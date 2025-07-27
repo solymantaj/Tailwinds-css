@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary :#6366f1;
+  --color-heading :red;
+  --color-paragraph:#565973;
+  /* breakpoint */
+
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+}
+ 
+
+@layer components {
+  .ami {
+   @apply after:contain-[''] after:w-10 after: h-10 after:bg-amber-700 after:absolute after:top-0 after:z-20
+  }
+}
+
+@layer utilities {
+  .gap-2 {
+    gap:90px;
+  }
+}
+
+
+
+@utility container {
+  margin-inline:  auto;
+}
+
