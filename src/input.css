@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary :#6366f1;
-  --color-heading :red;
-  --color-paragraph:#565973;
+  --color-primary: #6366f1;
+  --color-heading: red;
+  --color-paragraph: #565973;
+  --color-gray-6: #9397AD;
+  --color-gray-1: #F3F6FF;
+
+  
   /* breakpoint */
 
   --breakpoint-*: initial;
@@ -11,23 +15,27 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 }
- 
+
 
 @layer components {
   .ami {
-   @apply after:contain-[''] after:w-10 after: h-10 after:bg-amber-700 after:absolute after:top-0 after:z-20
+    @apply after:content-[''] after:w-10 after:h-10 after:bg-amber-700 after:absolute after:top-0 after:z-20;
+  }
+
+  .common_btn {
+    @apply bg-primary py-2 px-3 text-white rounded-[4px] cursor-pointer;
+
   }
 }
 
 @layer utilities {
   .gap-2 {
-    gap:90px;
+    gap: 90px;
   }
 }
 
 
 
 @utility container {
-  margin-inline:  auto;
+  margin-inline: auto;
 }
-

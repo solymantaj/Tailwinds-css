@@ -1,50 +1,224 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html class="light">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="dark:bg-slate-700">
+<body class="">
   <!-- Navbar -->
-  <nav class="bg-gray-300 py-4">
+  <nav class=" bg-gray-1 py-4">
     <div class="container">
       <div class="grid gap-12 grid-cols-[auto_1fr_auto] items-center">
-        <!-- logo -->
+        <!-- Logo -->
         <div>
-          <img src="./images/solid.svg" alt="Logo">
+          <img src="./images/solid.svg" alt="LOGO" />
         </div>
         <!-- menu -->
-        <div>
-          <ul class="flex gap-5 items-center">
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+        <ul class="flex gap-5 items-center font-semibold">
+          <li>
+            <a href="#" class="flex items-center gap-1">Services
+              <span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.862 6.19534L7.99998 9.05734L5.13798 6.19534L4.19531 7.13801L7.99998 10.9427L11.8046 7.13801L10.862 6.19534Z"
+                    fill="#33354D" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- buttons -->
+        <div class="flex justify-end gap-6 items-center">
+          <div class="flex items-center gap-3">
+            <label for="theme">Light</label>
+            <label for="theme" class="flex items-center cursor-pointer select-none text-dark dark:text-white">
+              <div class="relative">
+                <input type="checkbox" id="theme" class="peer sr-only" />
+                <div class="block h-8 rounded-full bg-primary w-14"></div>
+                <div
+                  class="absolute w-6 h-6 transition bg-white rounded-full left-1 top-1 peer-checked:translate-x-full peer-checked:bg-green-200">
+                </div>
+              </div>
+            </label>
+            <label for="theme">Dark</label>
+          </div>
+          <button class="common_btn">Contact us</button>
         </div>
-        <!-- button -->
-        <div>
-          <button class="bg-primary py-3 px-3 text-white ">Contact us</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Services Section  -->
+  <section class="bg-gray-1">
+    <div class="container">
+      <div class="pt-10 pb-8">
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3">
+            <span>
+              <img src="./images/home.svg" alt="" />
+            </span>
+            <span class="leading-[1.6] text-gray-6 text-sm"> Homepage </span>
+          </div>
+
+          <span>
+            <img src="./images/double arrow.svg" alt="" />
+          </span>
+
+          <div class="flex items-center gap-3">
+            <span class="leading-[1.6] text-primary text-sm"> Services Page </span>
+          </div>
         </div>
       </div>
     </div>
 
+    <div class="container">
+      <h2 class="text-[40px] font-extrabold leading-[1.3] text-gray-9">Services Page</h2>
+      <div></div>
+    </div>
+  </section>
 
-  </nav>
+  <section class="bg-gray-1  relative">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-x-10 gap-y-20 pt-20">
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] rounded-[8px] px-10 pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/cms.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Custom Software Development <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="">
+              </span>
+            </h4>
+            <p class="pt-4">Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum
+              tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur
+              gravida ac ac lectus cursus egestas.</p>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] rounded-[8px] px-10 pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/launch.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Software Integration <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="">
+              </span>
+            </h4>
+            <p class="pt-4">Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum
+              bibendum dictumst. Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] px-10 rounded-[8px] pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/mobile-app.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Mobile App Development <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="">
+              </span>
+            </h4>
+            <p class="pt-4">Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id
+              blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis
+              semper eu bibendum enim, morbi.</p>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] px-10 rounded-[8px] pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/aaaa.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Business Analytics <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="icon">
+              </span>
+            </h4>
+            <p class="pt-4">Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis
+              augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius
+              nunc a sed. </p>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] rounded-[8px] px-10 pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/web-development.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Software Testing <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="">
+              </span>
+            </h4>
+            <p class="pt-4">Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt
+              ultricies vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur
+              ultricies. </p>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="relative pt-[64px] rounded-[8px] px-10 pb-10 bg-white shadow-1">
+          <div
+            class="absolute left-[40px] top-0 -translate-y-1/2 size-20 rounded-[8px] bg-primary flex items-center justify-center">
+            <img src="./images/timer.svg" alt="icon">
+          </div>
+          <div>
+            <h4 class="inline items-center justify-start gap-2">Project Management <span
+                class="size-6 rounded-full inline-flex items-center justify-center border-[3px] border-primary translate-y-[-3px]">
+                <img src="./images/arrow-circle.svg" alt="">
+              </span>
+            </h4>
+            <p class="pt-4">Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus
+              feugiat enim id pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean.
+              Scelerisque eget a nibh bibendum commodo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
 
 
 </body>
